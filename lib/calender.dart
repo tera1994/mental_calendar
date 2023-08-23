@@ -51,7 +51,8 @@ class _Calender extends State<Calender> {
                 content: Padding(
                   padding: EdgeInsets.all(8),
                   child: Text("日にちを選択してください"),
-                ),);
+                ),
+              );
             }
             
             return AlertDialog(
@@ -78,10 +79,10 @@ class _Calender extends State<Calender> {
               actions: [
                 ElevatedButton(onPressed: (){
                   depressionDegree.addAll({
-                    _selectedDay: [DepressionDegree(_depressionDegreeController.text)]
+                    _selectedDay!: [DepressionDegree(_depressionDegreeController.text)]
                   });
                   sleepTime.addAll({
-                    _selectedDay: [SleepTime(_sleepTimeController.text)]
+                    _selectedDay!: [SleepTime(_sleepTimeController.text)]
                   });
                   Navigator.of(context).pop();
                   setState(() {
