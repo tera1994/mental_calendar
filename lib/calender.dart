@@ -56,7 +56,6 @@ class _Calender extends State<Calender> {
             
             return AlertDialog(
               scrollable:  true,
-              //itle: Text('落ち込み度'),
               content: Padding(
                 padding: EdgeInsets.all(8),
                 child: Column(
