@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'depression_degree.dart';
 import 'sleep_time.dart';
+import 'depression_degree_dropdown_menu.dart';
 
 class Calender extends StatefulWidget {
   @override
@@ -54,7 +55,7 @@ class _Calender extends State<Calender> {
                 ),
               );
             }
-            
+            var dropDownMenu = DepressionDegreeDropdownMenu();
             return AlertDialog(
               scrollable:  true,
               content: Padding(
@@ -62,10 +63,7 @@ class _Calender extends State<Calender> {
                 child: Column(
                   children: [
                     Text('落ち込み度'),
-                    TextField(
-                    keyboardType: TextInputType.number,
-                    controller: _depressionDegreeController,
-                    ),
+                    dropDownMenu,
                     Padding(padding: EdgeInsets.all(16)),
                     Text('睡眠時間 [hour]'),
                     TextField(
@@ -79,7 +77,7 @@ class _Calender extends State<Calender> {
               actions: [
                 ElevatedButton(onPressed: (){
                   depressionDegree.addAll({
-                    _selectedDay!: [DepressionDegree(_depressionDegreeController.text)]
+                    _selectedDay!: [DepressionDegree(dropDownMenu.isSelectedValue)]
                   });
                   sleepTime.addAll({
                     _selectedDay!: [SleepTime(_sleepTimeController.text)]
