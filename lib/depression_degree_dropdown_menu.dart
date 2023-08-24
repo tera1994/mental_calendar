@@ -6,10 +6,10 @@ class DepressionDegreeDropdownMenu extends StatefulWidget {
   String isSelectedValue = 'わからない';
 
   @override
-  State<DepressionDegreeDropdownMenu> createState() => _DDepressionDegreeDropdownMenuState();
+  State<DepressionDegreeDropdownMenu> createState() => _DepressionDegreeDropdownMenuState();
 }
 
-class _DDepressionDegreeDropdownMenuState extends State<DepressionDegreeDropdownMenu> {
+class _DepressionDegreeDropdownMenuState extends State<DepressionDegreeDropdownMenu> {
 
   @override
   Widget build(BuildContext context) {

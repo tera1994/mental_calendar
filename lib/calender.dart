@@ -3,6 +3,7 @@ import 'package:table_calendar/table_calendar.dart';
 import 'depression_degree.dart';
 import 'sleep_time.dart';
 import 'depression_degree_dropdown_menu.dart';
+import 'mental_data_store.dart';
 
 class Calender extends StatefulWidget {
   @override
@@ -14,7 +15,7 @@ class _Calender extends State<Calender> {
   DateTime _focusedDay = DateTime.now();
   DateTime? _selectedDay;
 
-  Map<DateTime?,List<DepressionDegree>> depressionDegree= {};
+  Map<DateTime?,List<DepressionDegree>> depressionDegree = {};
   Map<DateTime?,List<SleepTime>> sleepTime= {};
 
   TextEditingController _depressionDegreeController = TextEditingController();
@@ -24,7 +25,8 @@ class _Calender extends State<Calender> {
   late final ValueNotifier<List<DepressionDegree>> _selectedDepressionDegree;
   late final ValueNotifier<List<SleepTime>> _selectedSleepTime;
   @override
-  initState(){
+  initState()  {
+    MentalDataStore().getAllMentalData(depressionDegree, sleepTime);
     super.initState();
     _selectedDay = null;
     _selectedDepressionDegree = ValueNotifier(_getDepressionDegreeForDay(_selectedDay));
@@ -76,6 +78,7 @@ class _Calender extends State<Calender> {
               ),
               actions: [
                 ElevatedButton(onPressed: (){
+                  MentalDataStore().saveMentalData(_selectedDay!,dropDownMenu.isSelectedValue,_sleepTimeController.text);
                   depressionDegree.addAll({
                     _selectedDay!: [DepressionDegree(dropDownMenu.isSelectedValue)]
                   });
