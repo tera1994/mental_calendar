@@ -107,6 +107,19 @@ class _Calender extends State<Calender> {
             focusedDay: _focusedDay,
             calendarFormat: _calendarFormat,
             eventLoader: _getDepressionDegreeForDay,
+            headerStyle: HeaderStyle(titleTextStyle: TextStyle(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w800)),
+            calendarStyle: CalendarStyle(
+              selectedTextStyle: TextStyle(fontSize:20, color: Colors.grey, fontWeight: FontWeight.bold ),
+              selectedDecoration: BoxDecoration(
+                color: Colors.yellow,
+                shape: BoxShape.circle,
+              ),
+              todayDecoration: BoxDecoration(
+                color: Color.fromARGB(255, 255, 248, 184),
+                shape: BoxShape.circle,
+              ),
+              todayTextStyle: TextStyle(fontSize:20, color: Colors.grey, fontWeight: FontWeight.bold )
+            ),
             selectedDayPredicate: (day) {
               return isSameDay(_selectedDay, day);
             },
