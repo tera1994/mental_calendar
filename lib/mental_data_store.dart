@@ -14,7 +14,6 @@ class MentalDataStore {
       return;
     }
     items.forEach((key, value) {
-      print('${key}!!!!!!!!!!!!!!!${value}');
       String dateTime = key;
       dateTime = key.replaceAll('/${STORE_NAME}/', '');
       try{

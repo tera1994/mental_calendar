@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'calender.dart';
+import 'package:intl/date_symbol_data_local.dart';
+
 void main() {
-  runApp(const MyApp());
+  initializeDateFormatting().then((_) => runApp(MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'メンタル管理',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.yellow),
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'メンタル管理'),

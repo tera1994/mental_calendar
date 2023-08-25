@@ -42,9 +42,6 @@ class _Calender extends State<Calender> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('メンタルカレンダー'),
-      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           showDialog(context: context, builder: (context){
@@ -106,6 +103,7 @@ class _Calender extends State<Calender> {
           TableCalendar(
             firstDay: DateTime(_focusedDay.year, _focusedDay.month - 3, _focusedDay.day),
             lastDay: DateTime(_focusedDay.year, _focusedDay.month + 3, _focusedDay.day),
+            locale: 'ja_JP',
             focusedDay: _focusedDay,
             calendarFormat: _calendarFormat,
             eventLoader: _getDepressionDegreeForDay,
@@ -142,7 +140,6 @@ class _Calender extends State<Calender> {
                   decoration: BoxDecoration(border:  Border.all(), borderRadius: BorderRadius.circular(12),
                   ),
                   child: ListTile(
-                    onTap:  () => print(''),
                     title: Text('落ち込み度 : ${value[index].degree}'),
                   ),
                 );
@@ -158,7 +155,6 @@ class _Calender extends State<Calender> {
                   decoration: BoxDecoration(border:  Border.all(), borderRadius: BorderRadius.circular(12),
                   ),
                   child: ListTile(
-                    onTap:  () => print(''),
                     title: Text('睡眠時間 : ${value[index].time} hour'),
                   ),
                 );
