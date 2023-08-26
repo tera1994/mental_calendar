@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'depression_degree.dart';
 import 'sleep_time.dart';
 import 'depression_degree_dropdown_menu.dart';
 import 'mental_data_store.dart';
+import 'ad_banner.dart';
 
 class Calender extends StatefulWidget {
   @override
@@ -175,6 +177,7 @@ class _Calender extends State<Calender> {
              
             }),
           ),
+          AdBanner(size: AdSize.largeBanner),
         ],
       )
       
