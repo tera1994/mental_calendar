@@ -109,7 +109,7 @@ class _Calender extends State<Calender> {
             focusedDay: _focusedDay,
             calendarFormat: _calendarFormat,
             eventLoader: _getDepressionDegreeForDay,
-            headerStyle: HeaderStyle(titleTextStyle: TextStyle(fontSize: 20, color: Colors.black, fontWeight: FontWeight.w800)),
+            headerStyle: HeaderStyle(titleTextStyle: TextStyle(fontSize: 20, color: Colors.black, )),
             calendarStyle: CalendarStyle(
               selectedTextStyle: TextStyle(fontSize:20, color: Colors.grey, fontWeight: FontWeight.bold ),
               selectedDecoration: BoxDecoration(
@@ -146,7 +146,18 @@ class _Calender extends State<Calender> {
               _focusedDay = focusedDay;
             },
           ),
-          SizedBox(height: 8.00,),
+          Container(
+            padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
+            height: 80,
+            child: Text(
+            "はじめにカレンダーをタップ",
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+             ),
+            ),
+          ),
           Expanded(
             child: ValueListenableBuilder<List<DepressionDegree>>(valueListenable: _selectedDepressionDegree, builder: (context, value, _){
               return ListView.builder(itemCount: value.length, itemBuilder: (context, index){
