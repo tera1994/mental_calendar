@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "736756584053",
+    "project_id": "mental-manager-3a2f8",
+    "storage_bucket": "mental-manager-3a2f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736756584053:android:3a7d2d09fe866182f4f23c",
+        "android_client_info": {
+          "package_name": "com.example.mental_manager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736756584053-l123au6tkof1m90leb3998b8tkprnpa3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaYBY1UTSE0BsVMNRfn4AUYj_FzKwBXLQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736756584053-l123au6tkof1m90leb3998b8tkprnpa3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
