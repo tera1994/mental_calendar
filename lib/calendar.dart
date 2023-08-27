@@ -7,12 +7,12 @@ import 'depression_degree_dropdown_menu.dart';
 import 'mental_data_store.dart';
 import 'ad_banner.dart';
 
-class Calender extends StatefulWidget {
+class Calendar extends StatefulWidget {
   @override
-  _Calender createState() => _Calender();
+  _Calendar createState() => _Calendar();
 }
 
-class _Calender extends State<Calender> {
+class _Calendar extends State<Calendar> {
   CalendarFormat _calendarFormat = CalendarFormat.month;
   DateTime _focusedDay = DateTime.now();
   DateTime? _selectedDay;

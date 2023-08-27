@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'calender.dart';
+import 'calendar.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'ad_banner.dart';
 import 'firebase_options.dart';
@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Calender(),
+        child: Calendar(),
       )
     );
   }
