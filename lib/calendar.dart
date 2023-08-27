@@ -147,12 +147,12 @@ class _Calendar extends State<Calendar> {
             },
           ),
           Container(
-            padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
-            height: 80,
+            padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+            height: 30,
             child: Text(
             "はじめにカレンダーをタップ",
             style: TextStyle(
-              fontSize: 18,
+              fontSize:17,
               fontWeight: FontWeight.bold,
               color: Colors.black,
              ),
