@@ -1,4 +1,4 @@
-# mental_manager
+# mental_calendar
 
 A new Flutter project.
 

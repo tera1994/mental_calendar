@@ -1,4 +1,4 @@
-package com.example.mental_manager
+package com.example.mental_calendar
 
 import io.flutter.embedding.android.FlutterActivity
 
