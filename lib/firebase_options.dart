@@ -45,17 +45,17 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyCYW0TePBqvPbj3bQoPc_8M-m7TeSnDgEY',
-    appId: '1:736756584053:web:25804e722dba98fcf4f23c',
+    appId: '1:736756584053:web:d887b0da05b34fdef4f23c',
     messagingSenderId: '736756584053',
     projectId: 'mental-manager-3a2f8',
     authDomain: 'mental-manager-3a2f8.firebaseapp.com',
     storageBucket: 'mental-manager-3a2f8.appspot.com',
-    measurementId: 'G-PQ0JRG4R9P',
+    measurementId: 'G-B1R8BNXBZ5',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCaYBY1UTSE0BsVMNRfn4AUYj_FzKwBXLQ',
-    appId: '1:736756584053:android:3a7d2d09fe866182f4f23c',
+    appId: '1:736756584053:android:a45cbd0f2b00b58df4f23c',
     messagingSenderId: '736756584053',
     projectId: 'mental-manager-3a2f8',
     storageBucket: 'mental-manager-3a2f8.appspot.com',
@@ -63,7 +63,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyAzePe1KEQ-mFBa2Pu1Pk97r-QQDGvJpeo',
-    appId: '1:736756584053:ios:bd016e9f75dd0c95f4f23c',
+    appId: '1:736756584053:ios:5543ab93e8c4c156f4f23c',
     messagingSenderId: '736756584053',
     projectId: 'mental-manager-3a2f8',
     storageBucket: 'mental-manager-3a2f8.appspot.com',
@@ -73,7 +73,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyAzePe1KEQ-mFBa2Pu1Pk97r-QQDGvJpeo',
-    appId: '1:736756584053:ios:31e9fcde884d4c05f4f23c',
+    appId: '1:736756584053:ios:9b1a7483b0c25d63f4f23c',
     messagingSenderId: '736756584053',
     projectId: 'mental-manager-3a2f8',
     storageBucket: 'mental-manager-3a2f8.appspot.com',
