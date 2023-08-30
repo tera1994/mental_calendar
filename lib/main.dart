@@ -22,12 +22,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'メンタル管理',
+      title: 'メンタルカレンダー',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.yellow),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'メンタル管理'),
+      home: const MyHomePage(title: 'メンタルカレンダー'),
     );
   }
 }
