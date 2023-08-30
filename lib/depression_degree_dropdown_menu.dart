@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class DepressionDegreeDropdownMenu extends StatefulWidget {
   DepressionDegreeDropdownMenu({Key? key}) : super(key: key);
 
-  String isSelectedValue = 'わからない';
+  String isSelectedValue = '普通';
 
   @override
   State<DepressionDegreeDropdownMenu> createState() => _DepressionDegreeDropdownMenuState();
@@ -16,24 +16,24 @@ class _DepressionDegreeDropdownMenuState extends State<DepressionDegreeDropdownM
     return DropdownButton(
       items: const[
         DropdownMenuItem(
-          value: 'ない',
-          child: Text('ない'),
+          value: '良い',
+          child: Text('良い'),
         ),
         DropdownMenuItem(
-            value: 'ほとんどない',
-            child: Text('ほとんどない'),
+            value: '少し良い',
+            child: Text('少し良い'),
         ),
         DropdownMenuItem(
-            value: 'わからない',
-            child: Text('わからない'),
+            value: '普通',
+            child: Text('普通'),
         ),
         DropdownMenuItem(
-            value: 'すこしある',
-            child: Text('すこしある'),
+            value: '少し悪い',
+            child: Text('少し悪い'),
         ),
         DropdownMenuItem(
-            value: 'ある',
-            child: Text('ある'),
+            value: '悪い',
+            child: Text('悪い'),
         ),
       ],
       value: widget.isSelectedValue,
