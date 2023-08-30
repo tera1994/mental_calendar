@@ -68,7 +68,7 @@ class DefaultFirebaseOptions {
     projectId: 'mental-manager-3a2f8',
     storageBucket: 'mental-manager-3a2f8.appspot.com',
     iosClientId: '736756584053-qho8m4iianamfjiifog3tu0e325su3c7.apps.googleusercontent.com',
-    iosBundleId: 'com.example.mentalManager',
+    iosBundleId: 'com.tera1994.mentalManager',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
@@ -78,6 +78,6 @@ class DefaultFirebaseOptions {
     projectId: 'mental-manager-3a2f8',
     storageBucket: 'mental-manager-3a2f8.appspot.com',
     iosClientId: '736756584053-1jlvbqoa2erttslk2a8er97qik05vj4k.apps.googleusercontent.com',
-    iosBundleId: 'com.example.mentalManager.RunnerTests',
+    iosBundleId: 'com.tera1994.mentalManager.RunnerTests',
   );
 }

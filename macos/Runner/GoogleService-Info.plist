@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.mentalManager.RunnerTests</string>
+	<string>com.tera1994.mentalManager.RunnerTests</string>
 	<key>PROJECT_ID</key>
 	<string>mental-manager-3a2f8</string>
 	<key>STORAGE_BUCKET</key>

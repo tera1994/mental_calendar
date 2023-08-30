@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:736756584053:android:a45cbd0f2b00b58df4f23c",
         "android_client_info": {
-          "package_name": "com.example.mental_calendar"
+          "package_name": "com.tera1994.mental_calendar"
         }
       },
       "oauth_client": [
@@ -34,7 +34,7 @@
               "client_id": "736756584053-1jlvbqoa2erttslk2a8er97qik05vj4k.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.mentalManager.RunnerTests"
+                "bundle_id": "com.tera1994.mentalManager.RunnerTests"
               }
             }
           ]
