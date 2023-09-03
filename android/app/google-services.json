@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "736756584053",
+    "project_id": "mental-manager-3a2f8",
+    "storage_bucket": "mental-manager-3a2f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736756584053:android:a45cbd0f2b00b58df4f23c",
+        "android_client_info": {
+          "package_name": "com.tera1994.mental_calendar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736756584053-l123au6tkof1m90leb3998b8tkprnpa3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaYBY1UTSE0BsVMNRfn4AUYj_FzKwBXLQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736756584053-l123au6tkof1m90leb3998b8tkprnpa3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "736756584053-1jlvbqoa2erttslk2a8er97qik05vj4k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tera1994.mentalManager.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

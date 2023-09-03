@@ -1,6 +1,6 @@
 {
-    "name": "mental_manager",
-    "short_name": "mental_manager",
+    "name": "mental_calendar",
+    "short_name": "mental_calendar",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
