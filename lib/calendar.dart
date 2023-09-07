@@ -44,7 +44,50 @@ class _Calendar extends State<Calendar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton:  Column(
+        verticalDirection: VerticalDirection.up, 
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+        FloatingActionButton(
+        onPressed: () {
+          showDialog(context: context, builder: (context){
+            if (_selectedDay == null){
+              return AlertDialog(
+                scrollable: true,
+                content: Padding(
+                  padding: EdgeInsets.all(8),
+                  child: Text("日にちを選択してください"),
+                ),
+              );
+            }
+            var dropDownMenu = DepressionDegreeDropdownMenu();
+            return AlertDialog(
+              scrollable:  true,
+              content: Padding(
+                padding: EdgeInsets.all(8),
+                child: Text('メンタル情報を削除しますか?'),               
+              ),
+              actions: [
+                ElevatedButton(onPressed: (){
+                  MentalDataStore().deleteMentalData(_selectedDay!);
+                  depressionDegree.remove(_selectedDay!);
+                  sleepTime.remove(_selectedDay!);
+                  Navigator.of(context).pop();
+                  setState(() {
+                    _selectedDepressionDegree.value = _getDepressionDegreeForDay(_selectedDay);
+                    _selectedSleepTime.value = _getSleepTimeForDay(_selectedDay);
+                  });
+                  
+                }, child: Text("OK")),
+              ],
+            );
+
+          });
+        },
+        child: Icon(Icons.delete),
+      ),
+      Padding(padding: EdgeInsets.all(8)),
+      FloatingActionButton(
         onPressed: () {
           showDialog(context: context, builder: (context){
             if (_selectedDay == null){
@@ -99,7 +142,9 @@ class _Calendar extends State<Calendar> {
           });
         },
         child: Icon(Icons.add),
-      ),
+      )
+      ],)
+      ,
       body: Column(
         children: [
           TableCalendar(

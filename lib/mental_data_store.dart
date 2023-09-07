@@ -39,4 +39,9 @@ class MentalDataStore {
      'sleep_time': sleepTime,
     });
   }
+
+  void deleteMentalData(DateTime datetime){
+    final String id = datetime.toIso8601String();
+    _db.collection(STORE_NAME).doc(id).delete();
+  }
 }
