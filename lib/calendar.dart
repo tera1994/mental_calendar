@@ -147,6 +147,7 @@ class _Calendar extends State<Calendar> {
       ,
       body: Column(
         children: [
+          AdBanner(size: AdSize.largeBanner),
           TableCalendar(
             firstDay: DateTime(_focusedDay.year, _focusedDay.month - 3, _focusedDay.day),
             lastDay: DateTime(_focusedDay.year, _focusedDay.month + 3, _focusedDay.day),
@@ -191,6 +192,7 @@ class _Calendar extends State<Calendar> {
               _focusedDay = focusedDay;
             },
           ),
+          
           Container(
             padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
             height: 30,
@@ -233,7 +235,7 @@ class _Calendar extends State<Calendar> {
              
             }),
           ),
-          AdBanner(size: AdSize.largeBanner),
+          
         ],
       )
       
